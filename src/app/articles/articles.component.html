@@ -1,0 +1,22 @@
+<!--<div class="container">
+  <a *ngFor="let post of posts$ | async" [routerLink]="post.route"  class="h1">
+
+    <div class="content">
+    <div class="square">
+      <h1>{{post.title}}</h1>
+      <br>  
+      <p>{{post['description']}}</p>
+    </div>
+  
+  </div>
+</a>
+</div>-->
+
+<a *ngFor="let post of posts$ | async" [routerLink]="post.route"  class="h1">
+<div class="card">
+    <p>{{post.title}}</p>
+      
+    <p class="card-footer">{{post['description']}}</p>
+
+</div>
+</a>
